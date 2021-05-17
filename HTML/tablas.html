@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <!--elementos-->
+        <tr>
+            <td>Magdalena Ladron de Guevara</td>
+            <td>magdalena@gmail.com</td>
+            <td>Santiago</td>
+        </tr>
+        <td>Pedro</td>
+        <td>pedro@gmail.com</td>
+        <td>Coquimbo</td>
+    </Table>
+
+    <form action="" method="post">
+        <label for="name">Nombre</label>
+        <!--el id es el identificador unico para los elementoss-->
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="Pass">clave:</label>
+        <input type="password" id="Pass" name="pass">
+        <br>
+        <label for="fechatime">Fecha:</label>
+        <input type="datetime-local" name="fechatime" id="fechatime">
+        <br>
+        <!--radio-->
+        <label for="masc">Masculino</label>
+        <input type="radio" id="masc" name: "sexo" value="1" <label for="masc">Femenino</label>
+        <input type="radio" id="fem" name: "sexo" value="2" <br>
+        <!--text area define cols y row-->
+        <textarea name="" id="descripcion" cols="3" rows="4"></textarea>
+        <br>
+        <!--select-->
+        <select name="lenguaje" id="lenguajes">
+        <option value="0">Seleccione</option>
+        <option value="1">Español</option>
+        <option value="2">ingés</option>
+    </select>
+        <input type="submit" value="">
+
+    </form>
+</body>
+
+</html>
