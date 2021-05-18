@@ -10,38 +10,43 @@
 
 <body>
     <h1>Mi Formulario de Registro</h1>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre">
-    <br><br>
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido">
-    <br><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email">
-    <br><br>
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password">
-    <br><br>
-    <label for="pw_confirm">Confirmar:</label>
-    <input type="password" id="pw_confirm" name="password_confirmacion">
-    <br><br>
-    <input type="radio" id="masculino" name="genero" value="masculino">
-    <label for="masculino">Hombre</label>
-    <input type="radio" id="femenino" name="genero" value="femenino">
-    <label for="femenino">Mujer</label>
-    <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
-    <label for="decline">Otro</label>
-    <p>Una breve descripción de ti:</p>
-    <textarea name="descripcion"></textarea>
-    <br>
-    <p>Lenguaje Favorito:</p><select name="lenguaje Favorito">Lenguaje Favorito:
+    <Form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label for="pw_confirm">Confirmar:</label>
+        <input type="password" id="pw_confirm" name="password_confirmacion">
+        <br><br>
+        <label for="cumpleaños">Cumpleaños:</label>
+        <input type="date" name="Cumpleaños" id="cumpleaños">
+        <br><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Hombre</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Mujer</label>
+        <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
+        <label for="prefiero-no-decir">Otro</label>
+        <p>Una breve descripción de ti:</p>
+        <textarea name="descripcion"></textarea>
+        <br>
+        <label for="lenguajes">Lenguaje Favorito:</label>
+        <select id="lenguajes" name="lenguajeFavorito">
         <option value="Javascript">Javascript</option>
         <option value="html">Html</option>
         <option value="Css">Css</option></select>
-    <label>
+        <label>
         <br><br>
         </label>
-    <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
