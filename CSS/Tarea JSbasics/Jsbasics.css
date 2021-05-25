@@ -1,0 +1,62 @@
+                    * {
+                        color: rgb(214, 217, 218);
+                        font-family: Gotham-Rounded;
+                        border-radius: 15px;
+                        margin: 5px;
+                        /*display: inline-block/inline-block;*/
+                    }
+                    
+                    a {
+                        color: rgb(0, 247, 255);
+                    }
+                    
+                    ul {
+                        padding-left: 5px;
+                    }
+                    
+                    li {
+                        padding left: 5px;
+                    }
+                    
+                    span {
+                        color: rgb(100, 6, 252);
+                    }
+                    
+                    #wrapper {
+                        background-color: rgb(14, 14, 136);
+                        width: 970px;
+                        padding: 5px;
+                    }
+                    
+                    #header {
+                        width: 900px;
+                        background-color: rgb(201, 4, 4);
+                        margin: 10px auto;
+                        padding: 10px;
+                        font-weight: bold;
+                    }
+                    
+                    #sidebar {
+                        background-color: rgb(4, 120, 136);
+                        margin: 10px;
+                        padding: 20px;
+                        display: inline-block;
+                        top: 10px;
+                        vertical-align: top;
+                        line-height: 10pt;
+                    }
+                    
+                    #cuerpo {
+                        background-color: rgb(1, 1, 43);
+                        margin: 10px;
+                        padding: 20px;
+                        width: 68%;
+                        max-height: 30%;
+                        display: inline-block;
+                    }
+                    
+                    #footer {
+                        background-color: rgb(78, 77, 77);
+                        margin: 10px;
+                        padding: 10px;
+                    }
