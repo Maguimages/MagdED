@@ -1,25 +1,9 @@
                     * {
                         color: rgb(214, 217, 218);
-                        font-family: Gotham-Rounded;
                         border-radius: 15px;
                         margin: 5px;
+                        font-family: Gotham-Rounded;
                         /*display: inline-block/inline-block;*/
-                    }
-                    
-                    a {
-                        color: rgb(0, 247, 255);
-                    }
-                    
-                    ul {
-                        padding-left: 5px;
-                    }
-                    
-                    li {
-                        padding left: 5px;
-                    }
-                    
-                    span {
-                        color: rgb(100, 6, 252);
                     }
                     
                     #wrapper {
@@ -33,26 +17,29 @@
                         background-color: rgb(201, 4, 4);
                         margin: 10px auto;
                         padding: 10px;
-                        font-weight: bold;
+                        font-weight: 600;
                     }
                     
                     #sidebar {
                         background-color: rgb(4, 120, 136);
+                        font-size: 13px;
+                        line-height: 8pt;
                         margin: 10px;
-                        padding: 20px;
+                        padding: 10px;
                         display: inline-block;
                         top: 10px;
                         vertical-align: top;
-                        line-height: 10pt;
                     }
                     
                     #cuerpo {
                         background-color: rgb(1, 1, 43);
                         margin: 10px;
                         padding: 20px;
-                        width: 68%;
+                        width: 71%;
                         max-height: 30%;
                         display: inline-block;
+                        font-size: 13px;
+                        line-height: auto;
                     }
                     
                     #footer {
@@ -60,3 +47,25 @@
                         margin: 10px;
                         padding: 10px;
                     }
+                    
+                    a {
+                        color: rgb(0, 247, 255);
+                    }
+                    
+                    ul {
+                        padding-left: 10px;
+                    }
+                    
+                    li {
+                        padding left: 5px;
+                    }
+                    
+                    span {
+                        color: rgb(100, 6, 252);
+                    }
+                    
+                    h1 {
+                        font-weight: bolder;
+                    }
+                    
+                    p {}
