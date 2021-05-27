@@ -1,0 +1,144 @@
+    * {
+        font-family: Helvetica, sans-serif;
+    }
+    
+    #wrapper {
+        background-color: rgb(229, 230, 231);
+        width: 1000px;
+        height: auto;
+        margin: 0px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    
+    h1 {
+        margin-right: 450px;
+        font-family: ComicNeueSansID;
+        margin-bottom: 1px;
+        line-height: 2px;
+    }
+    
+    h3 {
+        margin-left: 450px;
+    }
+    
+    h1,
+    h3 {
+        color: black;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    
+    h2 {
+        color: whitesmoke;
+        background: linear-gradient(rgb(138, 138, 138), rgb(51, 51, 51), rgb(138, 138, 138));
+        /* background-color: grey; */
+        padding-left: 12px;
+        line-height: 200%;
+        text-align: left;
+        margin-top: 0;
+    }
+    
+    #maincontent {
+        background: radial-gradient(rgb(134, 105, 120), rgb(29, 13, 17));
+        /* margin: 0px; */
+        padding: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .retrato {
+        width: 44%;
+        height: auto;
+        border-width: 5px;
+        margin: 13px;
+        margin margin-left: 15px;
+        border-style: solid;
+        color: mintcream;
+        display: inline-block;
+    }
+    
+    #contenedorTop {
+        align-content: top;
+        width: 47%;
+        height: 295px;
+        margin: 10px;
+        vertical-align: top;
+    }
+    
+    #contenedor2 {
+        display: inline-block;
+        align-content: top;
+        vertical-align: top;
+        padding-left: 10px;
+        /* padding: 10px; */
+    }
+    
+    .subcajas {
+        display: inline-block;
+        /* align-content: center; */
+        width: 30%;
+        height: auto;
+        background: linear-gradient(to right, white, rgb(213, 189, 252));
+        margin: 10px;
+        padding: 0px;
+        text-align: justify;
+        vertical-align: top;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .parrafitos {
+        width: auto;
+        height: 180px;
+    }
+    
+    p {
+        padding-left: 14px;
+        padding-right: 14px;
+        /* font-family: Helvetica, sans-serif; */
+        /* font-family: helvetica neue; */
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    
+    .recortes {
+        width: 100%;
+        padding: none;
+        margin: none;
+    }
+    
+    .logos {
+        width: 40px;
+        margin: 5px;
+        display: inline-block;
+        padding: 0px;
+    }
+    
+    .tinyfooter {
+        display: center;
+        text-align: center;
+    }
+    
+    .button {
+        border-radius: 7px;
+        margin-bottom: 20px;
+        background-color: #1d701f;
+        color: white;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .footerdata {
+        text-align: center;
+        margin-top: 5px;
+        padding: 0px, 5px;
+        /* line-height: 5px; */
+    }
+    
+    .iconosFoot {
+        width: 20px;
+        margin-right: 5px;
+        margin-top: 5px;
+        line-height: 0px;
+    }
