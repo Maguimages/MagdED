@@ -1,0 +1,49 @@
+#wrapper {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    margin: 10px;
+}
+
+h1 {
+    background: gray;
+    outline: 1px solid black;
+    line-height: 50px;
+}
+
+#description {
+    background-color: darkgray;
+    outline: 1px solid black;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgb(245, 245, 166);
+    outline: 1px solid black;
+    padding: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    #tablet,
+    #desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    #phone,
+    #desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #phone,
+    #tablet {
+        display: none;
+    }
+}
