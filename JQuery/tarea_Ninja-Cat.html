@@ -5,35 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gato Ninja</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <title>Tarea Ninja Cat</title>
+
     <script>
         $(document).ready(function() {
+            $('img').click(function() {
+                var gato = $(this).attr('src');
+                $(this).attr('src', $(this).attr('data-alt-src'));
+                $(this).attr('data-alt-src', gato);
 
-            $("#ninja0").click(function() {
-                $("#ninja0").html( < img src = "img/ninja-cat/ninja0.png"
-                    id = "ninja0" / > );
-            });
-            // Fin de jQuery
+            })
         });
     </script>
-
 
 </head>
 
 <body>
     <div>
-        <img src="img/ninja-cat/ninja0.png" id="ninja0" />
+        <img src='img/ninja-cat/ninja0.png' data-alt-src='img/ninja-cat/cat0.png' />
         <br>
-        <img src="img/ninja-cat/ninja1.png" id="ninja1" />
+        <img src='img/ninja-cat/ninja1.png' data-alt-src='img/ninja-cat/cat1.png' />
         <br>
-        <img src="img/ninja-cat/ninja2.png" id="ninja2" />
+        <img src='img/ninja-cat/ninja2.png' data-alt-src='img/ninja-cat/cat2.png' />
         <br>
-        <img src="img/ninja-cat/ninja3.png" id="ninja3" />
+        <img src='img/ninja-cat/ninja3.png' data-alt-src='img/ninja-cat/cat3.png' />
         <br>
-        <img src="img/ninja-cat/ninja4.png" id="ninja4" />
-
+        <img src='img/ninja-cat/ninja4.png' data-alt-src='img/ninja-cat/cat4.png' />
     </div>
+
+
 </body>
 
 </html>
