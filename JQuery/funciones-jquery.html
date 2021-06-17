@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES::</title>
+    <style>
+        .ejemplo {
+            background-color: pink;
+            color: blue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            //$('').accion(function(){});
+            $('#boton1').click(function() {
+                console.log("Función click");
+
+                alert("Función click");
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide();
+            });
+            $('#parrafo2').click(function() {
+                $('#parrafo2').hide();
+            });
+            //show
+            $('#boton3').click(function() {
+                $('#parrafo2').show();
+            });
+            //toggle
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle();
+            });
+            //slideUp
+            $('#boton5').click(function() {
+                $('#parraf5').slideUp();
+            });
+            //slideDown
+            $('#boton7').click(function() {
+                $('#parraf5').slideDown();
+            });
+
+            //slidetoggle
+            $('#boton6').click(function() {
+                $('#parraf6').slideToggle();
+            });
+
+            //Fade
+            $('#boton8').click(function() {
+                $('#parrafo8').fadeIn();
+            });
+            $('#boton9').click(function() {
+                $('#parrafo8').fadeOut();
+            });
+
+            //After Before - agregar codigo html de manera dinamica
+            $('#boton11').click(function() {
+                $('#parrafo11').after("<p id=parraf1> After Before - agregar codigo html de manera dinamica</p>");
+            });
+            $('#boton12').click(function() {
+                $('#parrafo11').before("<p>After Before - agregar codigo html de manera dinamica</p>");
+            });
+            $('#boton10').click(function() {
+                $("<p>Test</p>").appendTo(".inner");
+
+            });
+            // FUNCION Attr
+            $('#boton13').click(function() {
+                $('#parrafo13').attr("");
+            });
+
+            //addClass
+            $('#boton14').click(function() {
+                $('#parrafo14').addClass("ejemplo");
+            });
+
+
+            //fin JQuery    
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>FUNCIÓN CLICK</h1>
+        <p>Clickea el botón para ejeutar el evento click</p>
+        <button id="boton1">Funcion click</button>
+        <hr>
+        <h1>FUNCIÓN HIDE, SHOW y TOGGLE</h1>
+        <p id="parrafo2">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton2">Funcion hide</button>
+        <button id="boton3">Funcion show</button>
+        <button id="boton4">Funcion toggle</button>
+        <hr>
+        <div>
+            <h1>FUNCIÓN SLIDE: UP - DOWN - TOGGLE</h1>
+            <br>
+
+            <button id="boton5">Funcion slideUp</button>
+            <button id="boton7">Funcion Slidedown</button>
+            <button id="boton6">Funcion SlideToggle</button>
+
+            <p id="parraf5"> A veces los alumnos gastan tanto tiempo revisando la documentación que esto les impide construir cosas. Revisa la documentación rápidamente y familiarízate solo con los métodos de jQuery a continuación. Dedica 4-5 horas en esta actividad y
+                luego sigue avanzando puesto que más adelante</p>
+
+            <p id="parraf6"> A veces los alumnos gastan tanto tiempo revisando la documentación que esto les impide construir cosas. Revisa la documentación rápidamente y familiarízate solo con los métodos de jQuery a continuación. Dedica 4-5 horas en esta actividad y
+                luego sigue avanzando puesto que más adelante</p>
+
+            <hr>
+            <h1>FUNCIÓN Fade in-out </h1>
+            <p id="parrafo8">A veces los alumnos gastan tanto tiempo revisando la documentación que esto les impide construir cosas. Revisa la documentación rápidamente y familiarízate solo con los métodos de jQuery a continuación. Dedica 4-5 horas en esta actividad y
+                luego sigue avanzando puesto que más adelante</p>
+            <button id="boton8">Funcion Fadein</button>
+            <button id="boton9">Funcion fadeOut</button>
+
+
+            <br>
+            <hr>
+
+            <h1>Funcion Before after</h1>
+            <p id="parrafo11">Clickea el botón para ejeutar el evento after o before</p>
+            <button id="boton11">Funcion after</button>
+            <button id="boton12">Funcion before</button>
+            <br>
+            <hr>
+            <div class="container">
+                <button id="boton10">Funcion Append</button>
+                <div class="inner">Hello</div>
+                <div class="inner">Goodbye</div>
+                <h2>Greetings</h2>
+            </div>
+            <hr>
+            <h1>FUNCIÓN ATTR</h1>
+            <p id="parrafo13">Clickea el botón para ejeutar el evento ATTR</p>
+            <button id="boton13">Funcion ATTR</button>
+
+            <hr>
+            <h1>FUNCIÓN addClass</h1>
+            <p id="parrafo14">Clickea el botón para ejeutar el evento addClass</p>
+            <button id="boton14">Funcion addClass</button>
+
+
+
+
+
+
+
+            <hr>
+            <div>
+
+            </div>
+        </div>
+</body>
+
+</html>
