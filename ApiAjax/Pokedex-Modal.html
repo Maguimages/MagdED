@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex::</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //carga dinamica de las imagenes
+            for (let i = 1; i <= 898; i++) {
+                $('#container').append('<img id="' + i + '" src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">');
+            }
+
+            //capturar el click en alguna imagen
+            $('img').click(function() {
+                var id = $(this).attr('id'); //obtenemos el valor del id de la imagen
+
+                $.get("https://pokeapi.co/api/v2/pokemon/" + id + "/", function(respuesta) {
+
+                    console.dir(respuesta);
+
+                    //desplegar en modal a traves de css
+                    $('#miModal').addClass('miModaltarget');
+
+                    //mostrar en modal 
+
+                    $('.modalcontenido').html('<h1>' + respuesta.name + '</h1>');
+                    $('.modalcontenido').append('<img src="' + respuesta.sprites.front_default + '" alt="">');
+                    $('.modalcontenido').append('<h2>Type: </h2>');
+                    $('.modalcontenido').append('<h3>' + respuesta.types[0].type.name + '</h3>');
+                    $('.modalcontenido').append('<h2>Height: </h2>');
+                    $('.modalcontenido').append('<h3>' + respuesta.height + '</h3>');
+                    $('.modalcontenido').append('<h2>Weigth: </h2>');
+                    $('.modalcontenido').append('<h3>' + respuesta.weight + '</h3>');
+
+                }, "json");
+
+            });
+
+            //capturamos el click em el elemento
+            $('#cerrar').click(function() {
+
+                $('#miModal').removeClass('miModaltarget');
+            });
+
+
+
+        });
+    </script>
+    <style>
+        .modal-contenido {
+            background-image: url("lined_paper/lined_paper.png");
+            background-color: transparent;
+            /* background-image: image(src="lined_paper/lined_paper_@2X.png");
+            background-color: rgb(234, 250, 244); */
+            Color: #0101a3;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 220px;
+            padding: 10px 20px;
+            margin: 5% auto;
+            position: relative;
+            border-left: 12px dotted #3c3d3c;
+            border-radius: 12px;
+            font-size: 14px;
+            box-shadow: 0 2px 5px 0 #323232, 0 2px 5px 0 rgba(0, 0, 0, 2);
+        }
+        
+        .modal {
+            background-color: #01998c80;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 1s;
+        }
+        
+        #miModal:target {
+            opacity: 0;
+            pointer-events: auto;
+        }
+        
+        .miModaltarget {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        #cerrar {
+            background-color: rgb(238, 110, 110);
+            color: honeydew;
+            box-shadow: 0 2px 5px 0 gray);
+            border-color: red;
+            border-radius: 12px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <button id="cerrar">X</button>
+                <div class="modalcontenido"> </div>
+                <!-- <img src="lined_paper/lined_paper_@2X.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
