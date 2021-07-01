@@ -20,8 +20,8 @@ header {
     display: inline-block;
     width: 60%;
     justify: right;
-    margin: auto;
     vertical-align: top;
+    margin-left: 200px;
 }
 
 .searchform {
@@ -35,25 +35,30 @@ header {
 #corporate {
     background: linear-gradient( #2562A7, #133D6C);
     color: white;
-    margin: 20px;
+    margin-left: 280px;
+    /* margin: 20px; */
     /* padding: 5px; */
     border-radius: 7px 0px 0px 7px;
     padding: 0px 25px 0px 5px;
     display: inline-block;
+    /* position: absolute; */
 }
 
 nav {
+    width: 600px;
     margin: 5px;
+    /* margin-left: 20px; */
     padding: 5px;
     display: inline-block;
-    justify-items: right;
     text-align: right;
+    justify-items: right;
+    vertical-align: top;
 }
 
 a {
     text-decoration: none;
     color: grey;
-    /* padding: 3px; */
+    padding: 3px;
 }
 
 input {
