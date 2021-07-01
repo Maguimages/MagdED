@@ -35,9 +35,8 @@ header {
 #corporate {
     background: linear-gradient( #2562A7, #133D6C);
     color: white;
-    margin-left: 280px;
-    /* margin: 20px; */
-    /* padding: 5px; */
+    margin-left: 250px;
+    margin-right: 30px;
     border-radius: 7px 0px 0px 7px;
     padding: 0px 25px 0px 5px;
     display: inline-block;
@@ -90,6 +89,19 @@ aside {
     display: inline-block;
 }
 
+#signin {
+    border-radius: 5px;
+    background: linear-gradient( #252525, #181818, #868686);
+    color: #d1d0d0;
+    padding: 1px 6px;
+}
+
+.pregunta {
+    color: #04a0fa;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .butaside {
     border: white solid 1px;
     background: linear-gradient( #2562A7, #133D6C);
@@ -116,7 +128,7 @@ section {
 }
 
 span {
-    color: blue;
+    color: #04a0fa;
 }
 
 article {
@@ -126,17 +138,21 @@ article {
 
 .column {
     border: lightgray solid 2px;
-    color: blue;
+    color: #04a0fa;
     background-color: #FFFFFF;
     margin: 10px;
-    display: flexbox;
+    flex-wrap: wrap;
     padding: 10px;
     vertical-align: top;
     text-align: left;
+    display: inline-block;
+    width: 50%;
 }
 
 .pcolumn {
-    width: 55%;
+    width: 70%;
+    display: inline-flexbox;
+    vertical-align: top;
 }
 
 .afooter {
