@@ -50,7 +50,6 @@ nav {
     margin: 5px;
     /* margin-left: 20px; */
     padding: 5px;
-    display: inline-block;
     text-align: right;
     vertical-align: top;
 }
@@ -71,7 +70,7 @@ h4 {
 
 #maincontent {
     background: linear-gradient(#3571B6, #1F446D, #1F446D, #1F446D);
-    height: 650px;
+    height: 580px;
 }
 
 #div-aside {
@@ -143,17 +142,30 @@ article {
     background-color: #FFFFFF;
     margin: 10px;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 12px;
     vertical-align: top;
     text-align: left;
     display: inline-block;
     width: 50%;
 }
 
-.pcolumn {
-    width: 70%;
-    display: inline-flexbox;
+.img-column {
+    display: inline-block;
     vertical-align: top;
+}
+
+.textcolumn {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+}
+
+.pcolumn {
+    /* width: 300px; */
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
 }
 
 .afooter {
@@ -171,7 +183,8 @@ footer {
     vertical-align: top;
     font-size: 13px;
     text-align: right;
-    padding: 15px;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
 #pfecha {
