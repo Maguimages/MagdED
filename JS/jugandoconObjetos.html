@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //1. Practica iterar por medio de un array de objetos/diccionarios.
+        //Imagina que se te entrega un array de objetos. Por ejemplo,
+
+        var users = [{
+            name: "Michael",
+            age: 37
+        }, {
+            name: "John",
+            age: 30
+        }, {
+            name: "David",
+            age: 27
+        }];
+
+
+        //¿Cómo harías print/log de la edad de John?
+        function edadNombre(name) {
+            for (var i = 0; i < users.length; i++) {
+                if (users[i].name == name) {
+                    console.log(users[i].age);
+                }
+            }
+        }
+
+        edadNombre("John");
+
+
+        //¿Cómo harías print/log del nombre del primer objeto?
+        console.log(users[0].name)
+
+
+        //¿Cómo harías print/log del nombre y la edad de cada usuario utilizando un for loop?
+        for (var i = 0; i < users.length; i++) {
+            console.log(users[i].name + " - " + users[i].age);
+        }
+
+
+
+        //¿Cómo harías para imprimir el nombre de los mayores de edad?
+        function edad(n) {
+            for (var i = 0; i < users.length; i++) {
+                if (users[i].age >= n) {
+                    console.log(users[i].name);
+                }
+            }
+        }
+
+        edad(18);
+    </script>
+
+</body>
+
+</html>
