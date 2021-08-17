@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjerciciosJQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // tu código jquery aquí
+            // etiqueta
+            $('button').click(function() {
+                alert("estoy en JQuery desde Button");
+
+            });
+
+            $('input').click(function() {
+                console.log("estoy en JQuery desde Input por etiqueta");
+                alert("estoy en Jquery desde input por etiqueta")
+
+            });
+
+
+
+
+            // Funcionalidad por clase (.)
+
+            $('.input2').click(function() {
+                console.log("estoy en JQuery desde Input por la clase");
+                alert("estoy en JQuery desde Input por la clase");
+
+            });
+
+            // especifico para un tipo de elemento y su clase
+            $('input.input2').click(function() {
+                console.log("estoy en JQuery desde Input.clase");
+                alert("estoy en JQuery desde Input.clase");
+
+            });
+            // Funcionalidad por Id(#)
+            $("#input3").click(function() {
+                console.log("estoy en JQuery desde input por el ID");
+                alert("estoy en JQuery desde input por el ID");
+                $('#parrafo').text("");
+            })
+
+
+            /*ejercicio de JQuery*/
+            var indice = 0;
+
+            $('#input4').click(function() {
+                console.log($('#parrafo').text());
+                $('#parrafo').text("Esto es texto modificado");
+                //var array = ["texto 1", "texto 2", "texto 3", "texto 4"];
+                //$('#parrafo').text(array[indice]);
+                //indice++;
+            });
+
+            // Fin jQuery''
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <button>Jquery</button>
+        <input type="button" value="boton1">
+        <input type="button" value="boton2" class="input2">
+        <input type="button" value="boton3" Id="Input3">
+        <p class="input2">esto es un p</p>
+
+    </div>
+
+</body>
+
+</html>
